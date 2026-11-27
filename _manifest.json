@@ -4,7 +4,7 @@
   "name": "麦麦掉线铃",
   "version": "0.2.0",
   "description": "定时查询 OneBot 11 客户端（NapCat、SnowLuma 等）报告的 QQ 在线状态，通过 Server 酱、PushPlus、飞书、钉钉或 Bark 发送掉线、探测异常和恢复通知。",
-  "author": {"name": "麦麦掉线铃贡献者", "url": "https://github.com/gouduyao"},
+  "author": {"name": "rainbear", "url": "https://github.com/gouduyao"},
   "urls": {"repository": "https://github.com/gouduyao/mai-offline-bell"},
   "license": "MIT",
   "plugin_type": "integration",
