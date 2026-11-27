@@ -1,0 +1,36 @@
+# 复制为 config.toml，或在麦麦 WebUI 的「麦麦掉线铃」设置中填写。
+[plugin]
+config_version = "1.0.0"
+enabled = true
+bot_name = "麦麦"
+interval_seconds = 60
+timeout_seconds = 10
+failure_threshold = 2
+notify_recovery = true
+
+[[monitor.adapters]]
+name = "NapCat"
+enabled = false                 # 改成 true 并核对地址
+ws_url = "ws://127.0.0.1:3001"  # 按官方适配器的 client.server / port 填写
+token = ""
+
+# 每种渠道独立启用。填写 SendKey、token、webhook 或 device_key 后生效。
+[serverchan]
+sendkey = ""
+
+[pushplus]
+token = ""
+topic = ""
+
+[feishu]
+webhook = ""
+secret = ""
+
+[dingtalk]
+webhook = ""
+secret = ""
+
+[bark]
+device_key = ""                   # Bark App 首页的 Key，也可粘贴整条示例地址
+server = "https://api.day.app"    # 自建 bark-server 时修改，可带路径前缀
+level = "timeSensitive"           # 告警级别：timeSensitive / critical / active / passive
